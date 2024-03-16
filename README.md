@@ -34,3 +34,5 @@ nix-collect-garbage
 ```
 
 sudo nixos-rebuild switch --flake ~/code/nix-config#lugnuts
+
+nix flake update
