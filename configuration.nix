@@ -14,6 +14,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
+  boot.loader.timeout = 600; # 5 minutes
 
   networking.hostName = "lugnuts"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -87,6 +88,8 @@
     isNormalUser = true;
     description = "Andrew Eick";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
+    hashedPassword = "$6$OjdT7/m2gOs3445g$Dj6Nl0t1IyD0Q2rDGpi66bgHD8dkrZ/8yQexGLkVDN/o0/hSJjhhXrpn839C1fS6zekz3gW5eMI/3uGXdueK50";
     packages = with pkgs; [
       chezmoi
     ];
@@ -112,6 +115,7 @@
   };
 
   programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
   # Tailscale commands
   services.tailscale.enable = true;
