@@ -26,3 +26,9 @@ sudo nixos-rebuild switch --flake github:andreweick/nix-config#lugnuts
 ```shell
 nix-shell -p git --command "nix run GitHub:andreweick/nix-config#lugnuts --extra-features nix-command --extra-experimental-features flakes"
 ```
+
+## Garbage collect
+
+```shell
+nix-collect-garbage
+```
