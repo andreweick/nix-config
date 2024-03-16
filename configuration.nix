@@ -116,7 +116,6 @@
 
   # Tailscale commands
   services.tailscale.enable = true;
-  services.tailscale.extraUpFlags = [ "--ssh" "--accept-dns" "--qr" "--operator=$USER" ];
   networking.firewall.checkReversePath = "loose";
 
   # Eternal Terminal
