@@ -106,7 +106,6 @@
     tailscale
     distrobox
     eternal-terminal
-    atuin
   ];
 
   programs.neovim = {
