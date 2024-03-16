@@ -12,7 +12,7 @@
     nixosConfigurations = {
       lugnuts = lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [ ./lugnuts/configuration.nix ];
+        modules = [ ./configuration.nix ];
       };
     };
   };
