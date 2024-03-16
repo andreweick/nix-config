@@ -87,7 +87,6 @@
     isNormalUser = true;
     description = "Andrew Eick";
     extraGroups = [ "networkmanager" "wheel" ];
-    password = "plaintext";
     packages = with pkgs; [
       chezmoi
     ];
@@ -101,7 +100,6 @@
   environment.systemPackages = with pkgs; [
     git
     curl
-    wget
     tailscale
     distrobox
     eternal-terminal

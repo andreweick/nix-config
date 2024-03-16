@@ -32,3 +32,5 @@ nix-shell -p git --command "nix run GitHub:andreweick/nix-config#lugnuts --extra
 ```shell
 nix-collect-garbage
 ```
+
+sudo nixos-rebuild switch --flake ~/code/nix-config#lugnuts
