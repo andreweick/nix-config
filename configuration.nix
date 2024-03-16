@@ -14,7 +14,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
-  boot.loader.timeout = 600; # 5 minutes
+  boot.loader.timeout = 180; # 3 minutes
 
   networking.hostName = "lugnuts"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

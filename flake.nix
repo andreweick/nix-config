@@ -3,9 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    atuin.url = "github:atuinsh/atuin";
   };
 
-  outputs = { self, nixpkgs, ... }:
+  outputs = { self, nixpkgs, atuin, ... }:
     let
       lib = nixpkgs.lib;
     in {
