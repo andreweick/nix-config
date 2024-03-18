@@ -47,6 +47,9 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # Turn on the QEMU guest agent for Proxmox reporting
+  services.qemuGuest.enable = true;
+
   # # Enable the X11 windowing system.
   # services.xserver.enable = true;
 
